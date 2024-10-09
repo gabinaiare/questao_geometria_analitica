@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <locale.h>
 
 // Função para calcular o valor dentro da raiz quadrada
 double calcular_radicando(double x1, double y1, double z1, double x2, double y2, double z2) {
@@ -34,6 +35,7 @@ double calcular_radicando(double x1, double y1, double z1, double x2, double y2,
 }
 
 int main() {
+    setlocale (LC_ALL, "Portuguese");
     // Coordenadas do primeiro caso
     double x1_1 = -2, y1_1 = 0, z1_1 = 1;
     double x2_1 = 1, y2_1 = -3, z2_1 = 2;
